@@ -127,6 +127,7 @@ class TicTocBoard(object):
                             print("You win!")
                         else:
                             print("You lose")
+                    cls()
                     self.agent_playing()
                     self.show_board()
                     is_winner = self.endgame()
@@ -148,6 +149,7 @@ class TicTocBoard(object):
                             print("You win!")
                         else:
                             print("You lose")
+                    cls()
                     self.human_playing(self.p1)
                     is_winner = self.endgame()
                     if is_winner:
